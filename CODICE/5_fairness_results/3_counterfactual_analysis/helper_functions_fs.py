@@ -1,7 +1,7 @@
 # functions for feature selection
 
-def format_df_green(s, green_value=0.05):
-    if s <= green_value: color = 'lightgreen'
+def format_df_green(s, green_value=1):
+    if s == green_value: color = 'lightgreen'
     else: color = 'white'
     return 'background-color: %s' % color 
 
